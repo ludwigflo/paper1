@@ -1,0 +1,15 @@
+model_type: 'LSTMAttnClassifier'
+
+LSTMAttnClassifier:
+  num_classes: 3
+  attention_dim: 128
+  num_attention_heads: 12
+
+  lstm_kwargs:
+    bidirectional: True
+    hidden_size: 128
+    num_layers: 2
+    dropout: 0.6
+
+embedding_path: '/model/embedding_module.pt'
+device: 'cuda'

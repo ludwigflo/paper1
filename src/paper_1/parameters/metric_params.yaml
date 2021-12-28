@@ -1,0 +1,29 @@
+# number of dialects (classes)
+num_classes: 3
+
+# whether we have a multi label classification problem
+multi_label: False
+
+# loss function
+loss: 'cross_entropy'
+
+# metric, which is used to determine the best model
+target_metric: 'f1_score/macro_avg'
+
+# mapping from class names to class indices
+class_mapping:
+    normal: 0
+    offensive: 1
+    hatespeech: 2
+
+# Mapping from class indices to class names
+inverse_class_mapping:
+    0: 'normal'
+    1: 'offensive'
+    2: 'hatespeech'
+
+optimize: 'f1_score/macro_avg/Race/validation'
+
+# whether the model provides logits or probabilities
+kwargs:
+    logits: True

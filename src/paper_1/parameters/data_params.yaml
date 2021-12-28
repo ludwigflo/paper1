@@ -1,0 +1,18 @@
+data:
+  domain_list: ['Race', 'Gender', 'Origin', 'Religion', 'Other', 'Sexual Orientation']
+  val_fold: 0
+
+  train:
+    data_path: '/home/flo/Desktop/repositories/paper_1/src/paper_1/data/hateXplain_augmented.tsv'
+    # data_path: '/home/flo/Desktop/repositories/paper_1/src/paper_1/data/hateXplain.tsv'
+    literal_columns: ['targets', 'rationals']
+    columns: ['text_data', 'labels']
+  validation:
+    validation_domains: ['Race', 'Religion', 'Sexual Orientation']
+    literal_columns: ['targets', 'rationals']
+    data_path: '/home/flo/Desktop/repositories/paper_1/src/paper_1/data/hateXplain.tsv'
+    columns: ['text_data', 'labels']
+
+data_loader:
+  balance_keys: ['labels']
+  batch_size: 8

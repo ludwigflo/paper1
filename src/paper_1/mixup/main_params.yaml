@@ -1,0 +1,4 @@
+base_dir: '/home/flo/Desktop/repositories/paper_1/src/paper_1/experiments/mixup/'
+num_train_iter: 100
+experiment_id: 3
+num_epochs: 70

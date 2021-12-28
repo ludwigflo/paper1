@@ -1,0 +1,4 @@
+base_dir: '/home/flo/Desktop/repositories/paper_1/src/paper_1/experiments/baseline/'
+num_train_iter: 100
+experiment_id: 4
+num_epochs: 70
